@@ -25,6 +25,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 cmake_minimum_required (VERSION 3.18)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
 
 project(tritonfastertransformerbackend LANGUAGES C CXX)
 
@@ -99,8 +100,8 @@ FetchContent_Declare(
 )
 FetchContent_Declare(
   repo-ft
-  GIT_REPOSITORY https://github.com/NVIDIA/FasterTransformer.git
-  GIT_TAG v5.0
+  GIT_REPOSITORY https://github.com/bryanzhang/FasterTransformer.git
+  GIT_TAG v14_5.0
   GIT_SHALLOW ON
 )
 FetchContent_MakeAvailable(repo-common repo-core repo-backend repo-ft)

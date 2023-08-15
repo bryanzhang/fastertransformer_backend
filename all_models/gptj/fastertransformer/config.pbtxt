@@ -166,7 +166,7 @@ instance_group [
 parameters {
   key: "tensor_para_size"
   value: {
-    string_value: "4"
+    string_value: "1"
   }
 }
 parameters {
@@ -250,7 +250,7 @@ parameters {
 parameters {
   key: "model_checkpoint_path"
   value: {
-    string_value: "/data/models/GPT-J/EleutherAI/gptj-model/c-model/4-gpu/"
+    string_value: "./models/j6b_ckpt/1-gpu/"
   }
 }
 parameters {
